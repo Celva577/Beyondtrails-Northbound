@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Executive Management MRW",
+        name: "Development Celva",
         // Activity type number (0 = Playing).
-        type: 5, 
+        type: 0, 
       },
     ],
   },
@@ -38,7 +38,7 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: process.env.OWNER_IDS?.split("!") || [],
 
     // Default wait time between command uses (in seconds).
     defaultCooldown: 3, 
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Metro Bot",
+      text: "Beyondtrails Northbound",
       // Footer icon URL (null = no icon).
       icon: null,
     },
